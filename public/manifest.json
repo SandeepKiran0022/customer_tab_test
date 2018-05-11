@@ -1,0 +1,15 @@
+{
+  "short_name": "Ontro Biz",
+  "name": "Ontro Business Manager",
+  "icons": [
+    {
+      "src": "https://img.ontroapp.com/logo/icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#AD2029",
+  "background_color": "#ffffff"
+}

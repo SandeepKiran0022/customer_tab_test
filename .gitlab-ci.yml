@@ -1,0 +1,59 @@
+image: rambabusaravanan/firebase
+
+stages:
+  - deploy
+
+cache:
+  paths:
+    - node_modules/
+  key: "$CI_BUILD_REPO"
+
+deploy-dev:
+  stage: deploy
+  only:
+    - dev
+  script:
+    - yarn
+    - yarn run build
+    - firebase use dev-ontro-biz --token $FIREBASE_TOKEN
+    - firebase deploy --only hosting -m "Pipe $CI_PIPELINE_ID Build $CI_BUILD_ID @ Hash `git log --oneline -n 1`" --token $FIREBASE_TOKEN
+  environment:
+    name: dev
+
+deploy-qa:
+  stage: deploy
+  only:
+    - qa
+  script:
+    - yarn
+    - yarn run build
+    - firebase use qa-ontrobiz --token $FIREBASE_TOKEN
+    - firebase deploy --only hosting -m "Pipe $CI_PIPELINE_ID Build $CI_BUILD_ID @ Hash `git log --oneline -n 1`" --token $FIREBASE_TOKEN
+  environment:
+    name: qa
+
+deploy-demo:
+  stage: deploy
+  only:
+    - demo
+  script:
+    - yarn
+    - yarn run build
+    - firebase use ontrobiz-demo --token $FIREBASE_TOKEN
+    - firebase deploy --only hosting -m "Pipe $CI_PIPELINE_ID Build $CI_BUILD_ID @ Hash $CI_COMMIT_TAG $CI_COMMIT_SHA" --token $FIREBASE_TOKEN
+  environment:
+    name: demo
+
+
+deploy-prod:
+  stage: deploy
+  only:
+    - master
+  script:
+    - yarn
+    - yarn run build
+    - firebase use ontrobiz --token $FIREBASE_TOKEN
+    - firebase deploy --only hosting -m "Pipe $CI_PIPELINE_ID Build $CI_BUILD_ID @ Hash $CI_COMMIT_TAG $CI_COMMIT_SHA" --token $FIREBASE_TOKEN
+  environment:
+    name: prod
+

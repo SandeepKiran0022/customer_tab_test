@@ -1,0 +1,47 @@
+.ontro-address .geosuggest__suggests-wrapper {
+  position: relative;
+}
+
+.ontro-address .geosuggest__suggests {
+  border-bottom: honeydew;
+  border-left: honeydew;
+  border-right: honeydew;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  border-radius: 0 0 2px 2px;
+  z-index: 1000;
+
+  background: white;
+  /* background-color: #fafafa; */
+  padding: 0;
+  list-style: none;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: 0;
+}
+
+.ontro-address .geosuggest__suggests--hidden {
+  max-height: 0;
+  overflow: hidden;
+  border-width: 0;
+}
+
+.ontro-address .geosuggest__item {
+  padding: 4px;
+  cursor: pointer;
+}
+.ontro-address .geosuggest__item small {
+  color: #777;
+}
+.ontro-address .geosuggest__item--active {
+  background: rgba(173, 32, 41, 0.1);
+  color: rgb(173, 32, 41);
+}
+
+.ontro-address .suggestion-icon {
+  font-size: 1em !important;
+  margin-right: 4px;
+  color: rgb(173, 32, 41);
+  vertical-align: middle;
+}

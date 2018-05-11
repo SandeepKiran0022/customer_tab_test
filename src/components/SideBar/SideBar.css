@@ -1,0 +1,55 @@
+.SideBar {
+  width: 200px;
+  background: #233140;
+  color: #C7CBCF;
+  padding-top: 10px;
+  position: fixed;
+  top: 50px;
+  left: 0;
+  bottom: 0;
+  overflow-y: auto;
+}
+@media screen and (max-width: 960px) {
+  .sidebar-item-name {
+    display: none;
+  }
+  .SideBar {
+    width: 50px;
+  }
+}
+.SideBar a,
+.SideBar a:hover {
+  text-decoration: none;
+  color: inherit;    
+}
+
+.SideBar .icon-wrap {
+  background: black;
+  height: 90px;
+  width: 90px;
+  margin: 32px 16px 32px;
+  padding: 24px;
+  text-align: center;
+}
+.SideBar .icon-wrap img {
+  height: 100%;
+}    
+
+.SideBar .item {
+  padding: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: #C7CBCF;
+}
+.SideBar .item.active {
+  background: black;
+  color: white;
+  border-left: 5px solid #AD2029;
+}
+.SideBar .item:hover {
+  color: white;
+}
+.SideBar .item > i {
+  vertical-align: middle;
+  margin: auto 5px;
+}

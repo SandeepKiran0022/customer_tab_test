@@ -1,0 +1,32 @@
+.Venue {
+  background-color: white;
+  padding: 5px;
+}
+
+.Venue .title {
+  color: #AD2029;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.Venue .btn {
+  margin: 10%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 80%;
+}
+.Venue .title i {
+  color: grey;
+  vertical-align: text-bottom;
+}
+
+@media screen and (max-width: 960px) {
+  .Venue {
+    padding: 5px;
+  }
+}
+
+.VenuePhoto {
+  width: 100%;
+  padding-bottom: 25px;
+}

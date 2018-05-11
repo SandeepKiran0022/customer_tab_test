@@ -1,0 +1,24 @@
+.settings .nav-tabs .nav-link {
+  min-width: 100px;
+  text-align: center;
+  font-weight: bold;
+  color: #aaa;
+  cursor: pointer;
+}
+.settings .nav-tabs .nav-link.active {
+  color: #7a142c;
+  
+}
+.settings {
+  background-color: white;
+  padding: 20px;
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 60%;
+}
+@media screen and (max-width: 960px) {
+  .settings {
+    width: 90%;
+    margin-bottom: 100px;
+  }
+}

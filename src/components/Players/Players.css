@@ -1,0 +1,76 @@
+.NewPlayer .form-group {
+  padding: 5px;
+}
+
+.NewPlayer h4 {
+  margin-left: 5px;
+  margin-bottom: 10px;
+  color: #AD2029;
+}
+
+.PlayersList {
+  cursor: pointer;
+
+}
+.PlayersList .selected {
+  background-color: #EEE;
+  font-weight: bold
+}
+.PlayersList .selected td:first-child{
+  color: #AD2029!important;
+
+}
+.overview .header{
+    opacity:0.75;
+    /* font-family:; */
+    font-size:18px;
+    color:#451719;
+    line-height:14px;
+    text-align:left;
+    font-variant: small-caps;
+    font-weight: bold
+
+    
+  }
+  .Coaching .header{
+    opacity:0.5;
+    /* font-family:Roboto-Bold; */
+    font-variant: small-caps;
+    font-size:16px;
+    color:#451719;
+    line-height:14px;
+    text-align:left;
+    font-variant: small-caps;
+}
+.nav-tabs .nav-link.active {
+  color:#AD2029!important;
+  font-weight: bold
+  
+}
+
+.dropdown-menu.dropdown-menu-right.show {
+  left:150px !important;
+  right:-100px;
+  background: rgb(253, 248, 248);
+  right:0;top:0;transition:.2s;width:0;z-index:2;
+  height:550px;
+  
+}
+.black
+{
+	color:black;
+}
+.pqrs
+{
+   border-radius: 50%;
+   display: inline-block;
+   height: 40px;   
+   width: 40px;
+   color:blue;
+}
+.pqrs:hover {
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   /*background:blue;*/
+}
+
+

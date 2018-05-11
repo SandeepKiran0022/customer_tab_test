@@ -1,0 +1,62 @@
+.Invoices .nav-tabs .nav-link {
+  min-width: 100px;
+  text-align: center;
+  font-weight: bold;
+  color: #AAA;
+  cursor: pointer;  
+}
+.Invoices .nav-tabs .nav-link.active {
+  color: #7A142C;
+}
+
+/* INVOICE TABLE */
+
+.Invoices .table {
+  font-size: 14px;
+}
+
+.Invoices .selected {
+  background-color: #EEE;
+}
+
+.InvoiceList.table td {
+  cursor: pointer;
+}
+
+
+/* INVOICE LIST COLLAPSE */
+.Invoices .collapse-list .no {
+  color: #777;
+  font-weight: bold;
+  margin-right: 12px;
+}
+  
+
+
+/* INVOICE DETAIL */
+
+.Invoices .detail-action-bar {
+  border: 1px solid #CCC;
+  background: white;
+  padding: 15px;
+}
+
+.RecordPayment .check-circle {
+  font-size: 15px;
+  display: none;
+}
+
+.RecordPayment .check-circle.active {
+  display: inline;
+}
+
+.RecordPayment .payment-option {
+  margin: 10px;
+  width: 51%;
+  background-color: lightgray;
+}
+
+.RecordPayment .payment-option.active {
+  background-color: #AD2029;
+  color: white;
+}

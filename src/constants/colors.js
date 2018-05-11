@@ -1,0 +1,1 @@
+export const primary = '#AD2029';

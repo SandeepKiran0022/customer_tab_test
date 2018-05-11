@@ -1,0 +1,43 @@
+/** Coaching List **/
+
+
+/** Coaching List Item **/
+
+.CoachingItem {
+  background-color: white;
+  padding: 5px;
+}
+
+.CoachingItem .title {
+  color: #AD2029;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.CoachingItem .btn {
+  margin: 10%;
+  margin-top: 10px;
+  width: 80%;
+}
+.CoachingItem .title i {
+  color: grey;
+  vertical-align: text-bottom;
+  margin-right: 16px;
+}
+
+/** New Coaching **/
+.NewCoaching {
+  background-color: white;
+}
+
+.NewCoaching .form-group {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.NewCoaching h4 {
+  margin-left: 10px;
+  margin-top: 5px;
+  color: #AD2029;
+}

@@ -1,0 +1,18 @@
+.LoginModal {
+  padding-top: 15%;
+}
+
+@media screen and (max-width: 960px) {
+  .LoginModal {
+    padding-top: 30%;
+  }
+}
+
+.LoginModal .form-group {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.LoginModal .modal-title {
+  width: 100%;
+}

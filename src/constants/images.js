@@ -1,0 +1,1 @@
+export const DEFAULT_USER_IMG = "https://img.ontroapp.com/default/user.png"

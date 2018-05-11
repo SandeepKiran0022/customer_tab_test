@@ -1,0 +1,28 @@
+.NewTrainer .form-group {
+  padding: 5px;
+}
+
+.Trainer { 
+  background-color: white;
+  padding: 10px;
+}
+
+.trainer-options-toggle {
+  font-size: 24px;
+  font-weight: 800;
+  position: absolute;
+  right: 5px;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 960px) {
+  .Trainer {
+    padding: 5px;
+  }
+}
+.NewTrainer h4 {
+  margin-left: 5px;
+  margin-bottom: 10px;
+  color: #AD2029;
+}

@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Futura, sans-serif;
+  background-color: #E6E6E6 !important;
+}
+
+.btn {
+  background-color: #AD2029;
+  color: white;
+  border-radius: 50%;
+}
+
+.material-icons {
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.btn .material-icons,
+.btn .material-icons + span {
+  vertical-align: middle;
+  font-size: 18px;
+  padding: 0;
+  border-radius: 50%;
+}
+
+.btn {
+  margin-right: 1px;
+  border-radius: 50%;
+}
+
+.ContentPane {
+  height: 100vh;
+  padding-top: 50px;
+  padding-left: 200px;
+}
+
+.Content {
+  width: 100%;
+  padding: 5px;
+}
+
+.modal-dialog.modal-lg {
+  max-width: 50% !important;
+}
+
+@media screen and (max-width: 960px) {
+  .ContentPane {
+    padding-left: 50px;
+  }
+  .Content {
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .modal-dialog.modal-lg {
+    max-width: 80% !important;
+  }
+}
+
+.DayPickerInput input {
+  width: 150px;
+}
+
+.DayPickerInput-OverlayWrapper {
+  left: -6.25rem;
+}
+
+th {
+  color: #868686;
+}
+
+.sprite-sports {
+  background: url('https://img.ontroapp.com/icons/sports.png') no-repeat;
+}

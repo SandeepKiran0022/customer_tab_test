@@ -1,0 +1,48 @@
+.TopBar {
+  background-color: white;
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+}
+.TopBar .logo {
+  font-size: 25px;
+  font-weight: 600;
+  width: 200px;
+}
+.TopBar > .navbar-nav > *,
+.TopBar > * {
+    margin: 10px;
+}
+.flyout {
+  position: absolute;
+  margin: 0;
+  width: 300px;
+  height: calc(100vh - 50px);
+  left: 100%;
+  top: 50px;
+  background-color: white;
+  transition: left .1s ease-in-out
+}
+.flyout.show {
+  left: calc(100% - 300px);
+}
+.flyout-org {
+  padding: 10px;
+}
+.flyout-org:hover {
+  background-color: #eee;
+}
+.flyout-org.current {
+  background-color: #AD2029;
+  color: white;
+}
+@media screen and (max-width: 960px) {
+  .TopBar > * {
+    margin: 1px;
+  }
+  .TopBar .logo {
+    font-size: 20px;
+    width: 60px;
+  }
+}
